@@ -36,17 +36,21 @@ class _MyPraktikaState extends State<MyPraktika> {
                       children: [
                         Column(
                            crossAxisAlignment:CrossAxisAlignment.start,
+                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
                             Text('Hi my name is Guncha',
-                            style: TextStyle(fontSize: 10,color:Color.fromRGBO(126, 0, 106, 1),fontWeight: FontWeight.w500),),
-              Text("I'm a freelance UX/UI Designer",maxLines: 1,
-                 style: TextStyle(fontSize: 10,color:Color.fromRGBO(126, 0, 106, 1),fontWeight: FontWeight.w600)),
-                 Text('with a marketing background',maxLines: 1,
-                 style: TextStyle(fontSize: 10,color:Color.fromRGBO(126, 0, 106, 1),fontWeight: FontWeight.w600)),
-                 Text('specializing in Shopify & Webflow.',maxLines: 1,
-                 style: TextStyle(fontSize: 10,color:Color.fromRGBO(126, 0, 106, 1),fontWeight: FontWeight.w600)),
-                  SizedBox(height: 20),
-            Row(children: [
+                            style: TextStyle(fontSize: 20,color:Color.fromRGBO(126, 0, 106, 1),fontWeight: FontWeight.w500),),
+                           // SizedBox(),
+                            Padding(padding: EdgeInsets.all(10)),
+
+                  Text("I'm a freelance UX/UI Designer\n with a marketing background\n specializing in Shopify & Webflow.",
+                   style:TextStyle(fontSize: 15,color:Color.fromRGBO(126, 0, 106, 1),fontWeight: FontWeight.w600) ,),
+                   Padding(
+              padding: const EdgeInsets.all(10),),
+                   
+
+            Row(
+              children: [
               Container(
                 alignment: Alignment.center,
               width: 70,

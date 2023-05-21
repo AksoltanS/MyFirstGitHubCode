@@ -1,6 +1,5 @@
 
 
-import 'package:asi/app_body.dart';
 import 'package:asi/app_body2.dart';
 import 'package:flutter/material.dart';
 class MyAppBar extends StatefulWidget {
@@ -17,15 +16,25 @@ class _MyAppBarState extends State<MyAppBar> {
   MaterialApp(
         title: ("JAZADE"),
         debugShowCheckedModeBanner: false,
+      
        
            home: Scaffold(
                     appBar: AppBar(
-
-            backgroundColor: Colors.grey,
+                      iconTheme: IconThemeData(color: Colors.purple),
+                      
+                
+                
+            backgroundColor: Colors.white,
+             title: 
+             Column(children: [Text("Ukyply", style: TextStyle(color: Colors.purple, fontWeight: FontWeight.bold, fontSize: 18),
+             ), Text("zenan", style: TextStyle(color: Colors.purple, fontSize: 13)),]),
             
+            leading:
+               Image.asset("assets/loga.jpg"),
+             
             actions: [
                PopupMenuButton(
-                icon: Icon(Icons.settings),
+                icon: Icon(Icons.menu),
                 itemBuilder: (context) => [
                   PopupMenuItem(
                 value: 1,
@@ -77,7 +86,9 @@ class _MyAppBarState extends State<MyAppBar> {
                 
                 ],
                 onSelected: (item)=>{
-                  print(item)
+                  setState(() {
+                    
+                  }),
                 }),
              
                
@@ -85,10 +96,7 @@ class _MyAppBarState extends State<MyAppBar> {
 
             ],
             
-            title: Text("Ukyply\n zenan"),
-            
-            leading: 
-            Image.asset("assets/loga.jpg"),
+           
             ),
          
           

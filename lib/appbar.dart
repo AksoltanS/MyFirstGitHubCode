@@ -1,6 +1,6 @@
 
 
-import 'package:asi/app_body2.dart';
+import 'package:asi/app_body.dart';
 import 'package:flutter/material.dart';
 class MyAppBar extends StatefulWidget {
   const MyAppBar({super.key});
@@ -17,21 +17,17 @@ class _MyAppBarState extends State<MyAppBar> {
         title: ("JAZADE"),
         debugShowCheckedModeBanner: false,
       
-       
            home: Scaffold(
                     appBar: AppBar(
                       iconTheme: IconThemeData(color: Colors.purple),
                       
-                
-                
-            backgroundColor: Colors.white,
+                      backgroundColor: Colors.white,
+                      leading:Image.asset("assets/loga.jpg"),
              title: 
-             Column(children: [Text("Ukyply", style: TextStyle(color: Colors.purple, fontWeight: FontWeight.bold, fontSize: 18),
-             ), Text("zenan", style: TextStyle(color: Colors.purple, fontSize: 13)),]),
-            
-            leading:
-               Image.asset("assets/loga.jpg"),
              
+             Text("Ukyply zenan", style: TextStyle(color: Colors.purple, fontWeight: FontWeight.bold, fontSize: 18),
+             ),
+             centerTitle: true,
             actions: [
                PopupMenuButton(
                 icon: Icon(Icons.menu),
@@ -91,16 +87,13 @@ class _MyAppBarState extends State<MyAppBar> {
                   }),
                 }),
              
-               
-              
 
             ],
             
-           
-            ),
+           ),
          
           
-          body: MyPraktika(),
+          body: AppBody(),
         ));
   }
 }

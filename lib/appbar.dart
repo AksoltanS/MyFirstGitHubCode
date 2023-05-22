@@ -1,5 +1,4 @@
 
-
 import 'package:asi/app_body.dart';
 import 'package:flutter/material.dart';
 class MyAppBar extends StatefulWidget {
@@ -81,11 +80,7 @@ class _MyAppBarState extends State<MyAppBar> {
                 ])),
                 
                 ],
-                onSelected: (item)=>{
-                  setState(() {
-                    
-                  }),
-                }),
+              ),
              
 
             ],
